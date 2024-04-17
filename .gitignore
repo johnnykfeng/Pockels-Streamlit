@@ -1,0 +1,24 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+.venv/
+env/
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Streamlit
+.cache/
+.streamlit/
+
+# IDE
+.vscode/
+.idea/
+
+# Miscellaneous
+*.log
+*.swp
+.DS_Store
+poetry.lock

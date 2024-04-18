@@ -7,7 +7,7 @@ st.set_page_config(
     page_title="Txt to Image",
     page_icon="🧊",)
 
-@st.cache_data  # maks image update faster
+@st.cache_data  # makes image update faster
 def txt2array(txt_file: str) -> np.ndarray:
     """Used in the store_in_hdf5 method.
     Convert a .txt file to a 2D numpy array."""

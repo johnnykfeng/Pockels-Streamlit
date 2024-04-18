@@ -4,7 +4,7 @@ import plotly.express as px
 import pandas as pd
 
 st.set_page_config(
-    page_title="Transmission")
+    page_title="Transmission Calculator")
 
 @st.cache_data  # makes image update faster
 def txt2array(txt_file: str) -> np.ndarray:
@@ -33,7 +33,7 @@ def plot_image(image_array: np.ndarray) -> None:
 
     return figure
 
-st.title("Pockels image viewer")
+st.title("Transmission Image Calculator")
 
 color_theme = st.sidebar.radio(
     "Choose a color theme:", ("Viridis", "Plasma", "Inferno", "Jet"), index=0
